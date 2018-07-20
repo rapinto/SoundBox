@@ -8,11 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "PlayerProtocol.h"
+
 extern NSString * const SoundCollectionViewItem_Identifier;
 
 @interface SoundCollectionViewItem : NSCollectionViewItem
 
 @property (weak) IBOutlet NSTextField * soundTitle;
 
+@property (nonatomic, weak) id<PlayerProtocol> playerDelegate;
 
 @end

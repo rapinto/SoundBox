@@ -36,6 +36,9 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = NSColor.lightGrayColor.CGColor;
 }
@@ -64,18 +67,21 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 
 - (IBAction)playAction:(id)sender
 {
-    NSURL * url = nil;
+    [self.playerDelegate couine];
     
-    if (self.currentItem.filePath)
-    {
-        url = [NSURL fileURLWithPath:self.currentItem.filePath];
-    }
-    else
-    {
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"]];
-    }
-    
-    [self playURL:url];
+//    NSURL * url = nil;
+//
+//    if (self.currentItem.filePath)
+//    {
+//        url = [NSURL fileURLWithPath:self.currentItem.filePath];
+//    }
+//    else
+//    {
+//        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"]];
+//    }
+//
+//    [self playURL:url];
+
 }
 
 

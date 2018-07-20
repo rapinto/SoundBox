@@ -8,6 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TodayViewController : NSViewController
+@interface TodayViewController : NSViewController <NSCollectionViewDelegate, NSCollectionViewDataSource>
+
+
+@property (nonatomic,strong) NSArray * contents;
+
+
+@property (assign) IBOutlet NSCollectionView * collectionView;
+
 
 @end
