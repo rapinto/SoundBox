@@ -20,6 +20,14 @@ NSString * const SoundCollectionViewCell_Identifier = @"SoundCollectionViewCell"
 #pragma mark - Public
 
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    self.layer.cornerRadius = 5;
+}
+
+
 - (void)prepareForReuse
 {
     [super prepareForReuse];
