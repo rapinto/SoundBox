@@ -17,6 +17,9 @@
 @property (nonatomic, strong) NSString * filePath;
 
 
+@property (nonatomic, strong) NSString * soundName;
+
+
 #pragma mark - Public
 
 

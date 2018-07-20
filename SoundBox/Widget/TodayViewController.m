@@ -44,7 +44,7 @@ static const CGSize maxExpandedSize = {320, 359};
     
     [self configureCollectionView];
     
-//    [self enableReorder]
+//    [self enableReorder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,7 +116,6 @@ static const CGSize maxExpandedSize = {320, 359};
 
 - (void)playSoundAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"playSoundAtIndexPath");
     SoundItem * item = [self.soundItems objectAtIndex:indexPath.row];
     self.currentItem = item;
     
@@ -136,7 +135,6 @@ static const CGSize maxExpandedSize = {320, 359};
 
 - (void)stopCurrentPlayingSound
 {
-    NSLog(@"stopCurrentPlayingSound");
     [self.player stop];
     
     [self deletePlayer];
@@ -145,11 +143,54 @@ static const CGSize maxExpandedSize = {320, 359};
 
 - (void)deletePlayer
 {
-    NSLog(@"deletePlayer");
     self.player = nil;
     self.currentItem = nil;
     
     [self.collectionView reloadData];
+}
+
+
+#pragma mark - Collection View Edit
+
+
+- (void)enableReorder
+{
+    UILongPressGestureRecognizer * gestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+    [self.view addGestureRecognizer:gestureRecognizer];
+}
+
+
+- (void)handleLongPress:(UILongPressGestureRecognizer*)gesture
+{
+    switch (gesture.state)
+    {
+        case UIGestureRecognizerStateBegan:
+        {
+            NSIndexPath *indexPath=[self.collectionView indexPathForItemAtPoint:[gesture locationInView:self.collectionView]];
+            if(indexPath!=nil)
+                [self.collectionView beginInteractiveMovementForItemAtIndexPath:indexPath];
+            break;
+        }
+            break;
+        case UIGestureRecognizerStateEnded:
+        {
+            [self.collectionView endInteractiveMovement];
+        }
+            break;
+        case UIGestureRecognizerStateCancelled:
+        {
+            [self.collectionView cancelInteractiveMovement];
+        }
+            break;
+        case UIGestureRecognizerStateChanged:
+        {
+            [self.collectionView updateInteractiveMovementTargetPosition:[gesture locationInView:self.collectionView]];
+        }
+            break;
+        default:
+            break;
+    }
+//    self.collectionView.edit
 }
 
 
@@ -258,6 +299,20 @@ static const CGSize maxExpandedSize = {320, 359};
         [self playSoundAtIndexPath:indexPath];
     }
     
+}
+
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath
+{
+    [self.soundItems exchangeObjectAtIndex:sourceIndexPath.row withObjectAtIndex:destinationIndexPath.row];
+    
+    [self.collectionView reloadData];
 }
 
 

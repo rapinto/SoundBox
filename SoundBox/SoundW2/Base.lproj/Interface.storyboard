@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Sounds-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="SoundsInterfaceController" title="Sounds" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SoundW2_Extension">
+                    <items>
+                        <table alignment="left" spacing="5" id="ebh-lh-l8h">
+                            <items>
+                                <tableRow identifier="SoundRowController" id="2fp-z5-6G1" customClass="SoundRowController" customModule="SoundW2_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="j21-Bl-pUc">
+                                        <items>
+                                            <label width="130" height="44" alignment="left" text="Label" textAlignment="center" id="4dH-0v-m1P"/>
+                                        </items>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="soundTitleLabel" destination="4dH-0v-m1P" id="ogb-e1-frw"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="ebh-lh-l8h" id="oTp-52-Rsn"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.16990643599999999" blue="0.1111088717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
