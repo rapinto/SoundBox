@@ -8,6 +8,7 @@
 
 
 #import "SoundCollectionViewCell.h"
+#import "SoundItem.h"
 
 
 NSString * const SoundCollectionViewCell_Identifier = @"SoundCollectionViewCell";
@@ -16,10 +17,35 @@ NSString * const SoundCollectionViewCell_Identifier = @"SoundCollectionViewCell"
 @implementation SoundCollectionViewCell
 
 
-- (void)awakeFromNib
+#pragma mark - Public
+
+
+- (void)prepareForReuse
 {
-    [super awakeFromNib];
-    // Initialization code
+    [super prepareForReuse];
+    
+    self.playIcon.image = nil;
+    self.soundTitleLabel.text = nil;
 }
+
+
+#pragma mark - Public
+
+
+- (void)updateWithSoundItem:(SoundItem *)soundItem isPlaying:(BOOL)isPlaying
+{
+    if (isPlaying)
+    {
+        self.playIcon.image = [UIImage imageNamed:@"stop.png"];
+    }
+    else
+    {
+        self.playIcon.image = [UIImage imageNamed:@"play.png"];
+    }
+    
+    
+    self.soundTitleLabel.text = soundItem.title;
+}
+
 
 @end

@@ -25,6 +25,9 @@ static const CGSize maxExpandedSize = {320, 384};
 @property (nonatomic,strong) NSMutableArray * soundItems;
 
 
+@property (nonatomic,strong) SoundItem * currentItem;
+
+
 @end
 
 
@@ -108,6 +111,34 @@ static const CGSize maxExpandedSize = {320, 384};
     filePath = [[NSBundle mainBundle] pathForResource:@"autopromo" ofType:@"wav"];
     item = [SoundItem soundItemWithTitle:@"Autopromo" filePath:filePath];
     [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"issou" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Issou" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"nice" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Nice" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"encoredutravail" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Travail" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Dindon" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"ouimessire" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Oui Messire" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"deloquetoi" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Deloque toi" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"mlleman.wav" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Cindy" filePath:filePath];
+    [self.soundItems addObject:item];    
 }
 
 
@@ -163,7 +194,14 @@ static const CGSize maxExpandedSize = {320, 384};
 {
     SoundCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:SoundCollectionViewCell_Identifier forIndexPath:indexPath];
     
-    
+    if ([self.soundItems count] > indexPath.row)
+    {
+        SoundItem * item = [self.soundItems objectAtIndex:indexPath.row];
+        
+        BOOL isPlaying = item == self.currentItem;
+        
+        [cell updateWithSoundItem:item isPlaying:isPlaying];
+    }
     
     return cell;
 }
@@ -215,6 +253,9 @@ static const CGSize maxExpandedSize = {320, 384};
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SoundItem * item = [self.soundItems objectAtIndex:indexPath.row];
+    self.currentItem = item;
+    
+    [self.collectionView reloadData];
     
     NSURL *soundFileURL = [NSURL fileURLWithPath:item.filePath];
     
@@ -233,8 +274,10 @@ static const CGSize maxExpandedSize = {320, 384};
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    [self.collectionView reloadData];
     self.player = nil;
+    self.currentItem = nil;
+ 
+    [self.collectionView reloadData];
 }
 
 
