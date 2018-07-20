@@ -8,6 +8,25 @@
 
 #import "ViewController.h"
 
+#import <AVFoundation/AVFoundation.h>
+#import "SoundItem.h"
+
+
+@interface ViewController () <AVAudioPlayerDelegate>
+
+
+@property (nonatomic,strong) AVAudioPlayer * player;
+
+
+@property (nonatomic,strong) NSMutableArray * soundItems;
+
+
+@property (nonatomic,strong) SoundItem * currentItem;
+
+
+@end
+
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -22,6 +41,32 @@
 
     // Update the view, if already loaded.
 }
+
+- (IBAction)play:(id)sender {
+    
+    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"];
+    
+    NSURL *soundFileURL = [NSURL fileURLWithPath:filePath];
+    
+    NSError *error;
+    
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
+                                                         error:&error];
+    self.player.numberOfLoops = 0; //Infinite
+    self.player.delegate  = self;
+    [self.player play];
+}
+
+
+#pragma mark - AVAudio Player
+
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    self.player = nil;
+    self.currentItem = nil;    
+}
+
 
 
 @end

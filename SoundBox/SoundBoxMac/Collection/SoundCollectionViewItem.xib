@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SoundCollectionViewItem">
+            <connections>
+                <outlet property="soundTitle" destination="HcI-Dg-Vdt" id="m1I-2g-gPC"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-gm-Dym">
+                    <rect key="frame" x="25" y="25" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VEg-Ww-aQb"/>
+                        <constraint firstAttribute="width" constant="50" id="nlz-AO-V42"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Alex" id="V3l-0T-aze"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HcI-Dg-Vdt">
+                    <rect key="frame" x="32" y="80" width="37" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="16t-cv-A21"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="dkI-cf-YMR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9v0-gm-Dym" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="1Ds-x8-Rog"/>
+                <constraint firstItem="HcI-Dg-Vdt" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Yw5-7W-Wji"/>
+                <constraint firstItem="HcI-Dg-Vdt" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="jHF-qX-iWE"/>
+                <constraint firstItem="9v0-gm-Dym" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="nmh-wJ-wXD"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Alex" width="367" height="459"/>
+    </resources>
+</document>
