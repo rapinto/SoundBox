@@ -13,7 +13,35 @@
 		7BF85BB42101C77F0086E01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BB32101C77F0086E01A /* Assets.xcassets */; };
 		7BF85BB72101C77F0086E01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BB52101C77F0086E01A /* LaunchScreen.storyboard */; };
 		7BF85BBA2101C77F0086E01A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BB92101C77F0086E01A /* main.m */; };
+		7BF85BC72101C7F90086E01A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF85BC62101C7F90086E01A /* NotificationCenter.framework */; };
+		7BF85BCB2101C7F90086E01A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BCA2101C7F90086E01A /* TodayViewController.m */; };
+		7BF85BCE2101C7F90086E01A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BCC2101C7F90086E01A /* MainInterface.storyboard */; };
+		7BF85BD22101C7F90086E01A /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7BF85BC42101C7F90086E01A /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BF85BD02101C7F90086E01A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF85B9F2101C77E0086E01A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BF85BC32101C7F90086E01A;
+			remoteInfo = Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BF85BD62101C7F90086E01A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BF85BD22101C7F90086E01A /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7BF85BA72101C77E0086E01A /* SoundBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +54,14 @@
 		7BF85BB62101C77F0086E01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF85BB82101C77F0086E01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BF85BB92101C77F0086E01A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BF85BC42101C7F90086E01A /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF85BC62101C7F90086E01A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7BF85BC92101C7F90086E01A /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		7BF85BCA2101C7F90086E01A /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		7BF85BCD2101C7F90086E01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7BF85BCF2101C7F90086E01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BF85BD72101CB7E0086E01A /* SoundBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundBox.entitlements; sourceTree = "<group>"; };
+		7BF85BD82101CBE70086E01A /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +72,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BF85BC12101C7F90086E01A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF85BC72101C7F90086E01A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				7BF85BA92101C77E0086E01A /* SoundBox */,
+				7BF85BC82101C7F90086E01A /* Widget */,
+				7BF85BC52101C7F90086E01A /* Frameworks */,
 				7BF85BA82101C77E0086E01A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7BF85BA72101C77E0086E01A /* SoundBox.app */,
+				7BF85BC42101C7F90086E01A /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +105,7 @@
 		7BF85BA92101C77E0086E01A /* SoundBox */ = {
 			isa = PBXGroup;
 			children = (
+				7BF85BD72101CB7E0086E01A /* SoundBox.entitlements */,
 				7BF85BAA2101C77E0086E01A /* AppDelegate.h */,
 				7BF85BAB2101C77E0086E01A /* AppDelegate.m */,
 				7BF85BAD2101C77E0086E01A /* ViewController.h */,
@@ -71,6 +119,26 @@
 			path = SoundBox;
 			sourceTree = "<group>";
 		};
+		7BF85BC52101C7F90086E01A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF85BC62101C7F90086E01A /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BF85BC82101C7F90086E01A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				7BF85BD82101CBE70086E01A /* Widget.entitlements */,
+				7BF85BC92101C7F90086E01A /* TodayViewController.h */,
+				7BF85BCA2101C7F90086E01A /* TodayViewController.m */,
+				7BF85BCC2101C7F90086E01A /* MainInterface.storyboard */,
+				7BF85BCF2101C7F90086E01A /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +149,34 @@
 				7BF85BA32101C77E0086E01A /* Sources */,
 				7BF85BA42101C77E0086E01A /* Frameworks */,
 				7BF85BA52101C77E0086E01A /* Resources */,
+				7BF85BD62101C7F90086E01A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BF85BD12101C7F90086E01A /* PBXTargetDependency */,
 			);
 			name = SoundBox;
 			productName = SoundBox;
 			productReference = 7BF85BA72101C77E0086E01A /* SoundBox.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7BF85BC32101C7F90086E01A /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BF85BD32101C7F90086E01A /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				7BF85BC02101C7F90086E01A /* Sources */,
+				7BF85BC12101C7F90086E01A /* Frameworks */,
+				7BF85BC22101C7F90086E01A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 7BF85BC42101C7F90086E01A /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +189,19 @@
 				TargetAttributes = {
 					7BF85BA62101C77E0086E01A = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					7BF85BC32101C7F90086E01A = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -119,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				7BF85BA62101C77E0086E01A /* SoundBox */,
+				7BF85BC32101C7F90086E01A /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +232,14 @@
 				7BF85BB72101C77F0086E01A /* LaunchScreen.storyboard in Resources */,
 				7BF85BB42101C77F0086E01A /* Assets.xcassets in Resources */,
 				7BF85BB22101C77E0086E01A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BF85BC22101C7F90086E01A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF85BCE2101C7F90086E01A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +256,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BF85BC02101C7F90086E01A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF85BCB2101C7F90086E01A /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BF85BD12101C7F90086E01A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BF85BC32101C7F90086E01A /* Widget */;
+			targetProxy = 7BF85BD02101C7F90086E01A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7BF85BB02101C77E0086E01A /* Main.storyboard */ = {
@@ -164,6 +289,14 @@
 				7BF85BB62101C77F0086E01A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7BF85BCC2101C7F90086E01A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BF85BCD2101C7F90086E01A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundBox/SoundBox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 978Q5P78QZ;
 				INFOPLIST_FILE = SoundBox/Info.plist;
@@ -290,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepper.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundBox/SoundBox.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 978Q5P78QZ;
 				INFOPLIST_FILE = SoundBox/Info.plist;
@@ -307,8 +442,46 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepper.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BF85BD42101C7F90086E01A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 978Q5P78QZ;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepper.app.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BF85BD52101C7F90086E01A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 978Q5P78QZ;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepper.app.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -330,6 +503,15 @@
 			buildConfigurations = (
 				7BF85BBE2101C77F0086E01A /* Debug */,
 				7BF85BBF2101C77F0086E01A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BF85BD32101C7F90086E01A /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF85BD42101C7F90086E01A /* Debug */,
+				7BF85BD52101C7F90086E01A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
