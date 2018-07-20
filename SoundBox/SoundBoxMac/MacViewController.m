@@ -80,14 +80,18 @@
 }
 
 
-- (void)couine
+- (void)sendSoundWithFile:(NSString *)file;
 {
-    NSString * response = @"turkey";
-    NSData * data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
+    NSData * data = [[NSData alloc] initWithData:[file dataUsingEncoding:NSASCIIStringEncoding]];
     
     [_outputStream write:[data bytes] maxLength:[data length]];
 }
 
+
+- (void)stream:(NSStream *)aStream handleEvent:(NSStreamEvent)eventCode
+{
+    NSLog(@"coucou");
+}
 
 
 @end

@@ -10,6 +10,6 @@
 
 @protocol PlayerProtocol <NSObject>
 
-- (void)couine;
+- (void)sendSoundWithFile:(NSString *)file;
 
 @end

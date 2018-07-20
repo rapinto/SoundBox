@@ -67,7 +67,11 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 
 - (IBAction)playAction:(id)sender
 {
-    [self.playerDelegate couine];
+    NSString * file = [[self.currentItem.filePath lastPathComponent] stringByDeletingPathExtension];
+    
+    [self.playerDelegate sendSoundWithFile:file];
+    
+//    Play local
     
 //    NSURL * url = nil;
 //
