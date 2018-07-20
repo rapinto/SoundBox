@@ -14,6 +14,7 @@
 
 NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_Identifier";
 
+
 @interface SoundCollectionViewItem () <AVAudioPlayerDelegate>
 
 
@@ -25,7 +26,11 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 
 @end
 
+
 @implementation SoundCollectionViewItem
+
+
+#pragma mark - Cocoa
 
 
 - (void)viewDidLoad
@@ -42,18 +47,43 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
     {
         self.currentItem = (SoundItem *)representedObject;
         
-        [self.soundTitle setStringValue:self.currentItem.title];
+        if (self.currentItem.title)
+        {
+            [self.soundTitle setStringValue:self.currentItem.title];
+        }
+        else
+        {
+            [self.soundTitle setStringValue:@"Catastrophe"];
+        }
     }
 }
 
 
-- (IBAction)play:(id)sender
-{    
-    NSURL *soundFileURL = [NSURL fileURLWithPath:self.currentItem.filePath];
+#pragma mark - Private
+
+
+- (IBAction)playAction:(id)sender
+{
+    NSURL * url = nil;
     
+    if (self.currentItem.filePath)
+    {
+        url = [NSURL fileURLWithPath:self.currentItem.filePath];
+    }
+    else
+    {
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"]];
+    }
+    
+    [self playURL:url];
+}
+
+
+- (void)playURL:(NSURL *)url
+{
     NSError *error;
     
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:url
                                                          error:&error];
     self.player.numberOfLoops = 0;
     self.player.delegate  = self;
@@ -67,7 +97,6 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
     self.player = nil;
-    self.currentItem = nil;
 }
 
 

@@ -27,6 +27,10 @@
 
 @implementation ViewController
 
+
+#pragma mark - Cocoa
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,13 +41,8 @@
 }
 
 
-- (void)setRepresentedObject:(id)representedObject
-{
-    [super setRepresentedObject:representedObject];
-}
-
-
 #pragma mark - NSCollectionViewDataSource
+
 
 - (NSInteger)numberOfSectionsInCollectionView:(NSCollectionView *)collectionView
 {
@@ -55,6 +54,7 @@
 {
     return [self.contents count];
 }
+
 
 - (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
