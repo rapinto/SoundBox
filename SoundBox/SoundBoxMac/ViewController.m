@@ -8,20 +8,18 @@
 
 #import "ViewController.h"
 
-#import <AVFoundation/AVFoundation.h>
+
 #import "SoundItem.h"
+#import "SoundCollectionViewItem.h"
 
 
-@interface ViewController () <AVAudioPlayerDelegate>
+@interface ViewController () <NSCollectionViewDelegate, NSCollectionViewDataSource>
 
 
-@property (nonatomic,strong) AVAudioPlayer * player;
+@property (nonatomic,strong) NSArray * contents;
 
 
-@property (nonatomic,strong) NSMutableArray * soundItems;
-
-
-@property (nonatomic,strong) SoundItem * currentItem;
+@property (assign) IBOutlet NSCollectionView * collectionView;
 
 
 @end
@@ -29,44 +27,39 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
-}
-
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
-}
-
-- (IBAction)play:(id)sender {
-    
-    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"];
-    
-    NSURL *soundFileURL = [NSURL fileURLWithPath:filePath];
-    
-    NSError *error;
-    
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
-                                                         error:&error];
-    self.player.numberOfLoops = 0; //Infinite
-    self.player.delegate  = self;
-    [self.player play];
-}
-
-
-#pragma mark - AVAudio Player
-
-
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+- (void)viewDidLoad
 {
-    self.player = nil;
-    self.currentItem = nil;    
+    [super viewDidLoad];
+    
+    self.contents = [SoundItem appSoundItems];
+    [self.collectionView registerClass:[SoundCollectionViewItem class] forItemWithIdentifier:SoundCollectionViewItem_Identifier];
+    [self.collectionView setContent:self.contents];
 }
 
+
+- (void)setRepresentedObject:(id)representedObject
+{
+    [super setRepresentedObject:representedObject];
+}
+
+
+#pragma mark - NSCollectionViewDataSource
+
+- (NSInteger)numberOfSectionsInCollectionView:(NSCollectionView *)collectionView
+{
+    return 1;
+}
+
+
+- (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [self.contents count];
+}
+
+- (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [collectionView makeItemWithIdentifier:SoundCollectionViewItem_Identifier forIndexPath:indexPath];
+}
 
 
 @end

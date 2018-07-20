@@ -7,11 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136F92A2210215BA008AC041 /* Alex.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F92A1210215BA008AC041 /* Alex.png */; };
+		136F92A3210215BA008AC041 /* Alex.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F92A1210215BA008AC041 /* Alex.png */; };
+		136F92A4210215BA008AC041 /* Alex.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F92A1210215BA008AC041 /* Alex.png */; };
 		13A404FB2101E83200C9724A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A404FA2101E83200C9724A /* AppDelegate.m */; };
 		13A404FE2101E83200C9724A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A404FD2101E83200C9724A /* ViewController.m */; };
 		13A405002101E83300C9724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A404FF2101E83300C9724A /* Assets.xcassets */; };
 		13A405032101E83300C9724A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A405012101E83300C9724A /* Main.storyboard */; };
 		13A405062101E83300C9724A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A405052101E83300C9724A /* main.m */; };
+		13CEFA3B210202930083EE65 /* IZI.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C232101FB660086E01A /* IZI.wav */; };
+		13CEFA3C210202930083EE65 /* baptiste.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C202101FA020086E01A /* baptiste.wav */; };
+		13CEFA3D210202930083EE65 /* lecode.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C1D2101F9C40086E01A /* lecode.wav */; };
+		13CEFA3E210202930083EE65 /* onenagros.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C1A2101F8BB0086E01A /* onenagros.wav */; };
+		13CEFA3F210202930083EE65 /* cestpasfaux.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C142101F52C0086E01A /* cestpasfaux.wav */; };
+		13CEFA40210202930083EE65 /* pasdefatigue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C112101EA280086E01A /* pasdefatigue.wav */; };
+		13CEFA41210202930083EE65 /* joe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C0E2101E97A0086E01A /* joe.wav */; };
+		13CEFA42210202930083EE65 /* mlleman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C0B2101E6C60086E01A /* mlleman.wav */; };
+		13CEFA43210202930083EE65 /* deloquetoi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C082101E5900086E01A /* deloquetoi.wav */; };
+		13CEFA44210202930083EE65 /* encoredutravail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C002101E2E30086E01A /* encoredutravail.wav */; };
+		13CEFA45210202930083EE65 /* ouimessire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C012101E2E30086E01A /* ouimessire.wav */; };
+		13CEFA46210202930083EE65 /* turkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BFF2101E2E30086E01A /* turkey.wav */; };
+		13CEFA47210202930083EE65 /* autopromo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BED2101E14B0086E01A /* autopromo.wav */; };
+		13CEFA48210202930083EE65 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BEE2101E14C0086E01A /* stop.png */; };
+		13CEFA49210202930083EE65 /* dejapostee.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BEF2101E14C0086E01A /* dejapostee.wav */; };
+		13CEFA4A210202930083EE65 /* nice.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BF02101E14C0086E01A /* nice.wav */; };
+		13CEFA4B210202930083EE65 /* issou.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BF12101E14C0086E01A /* issou.wav */; };
+		13CEFA4C210202930083EE65 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BF22101E14C0086E01A /* play.png */; };
+		13CEFA54210202A80083EE65 /* SoundCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CEFA50210202A80083EE65 /* SoundCollectionViewItem.xib */; };
+		13CEFA55210202A80083EE65 /* SoundCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CEFA52210202A80083EE65 /* SoundCollectionViewItem.m */; };
+		13CEFA562102070A0083EE65 /* SoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BE52101D8350086E01A /* SoundItem.m */; };
+		13CEFA5C2102083E0083EE65 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF85BC62101C7F90086E01A /* NotificationCenter.framework */; };
+		13CEFA602102083E0083EE65 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CEFA5F2102083E0083EE65 /* TodayViewController.m */; };
+		13CEFA632102083E0083EE65 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CEFA612102083E0083EE65 /* TodayViewController.xib */; };
+		13CEFA672102083E0083EE65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13CEFA652102083E0083EE65 /* InfoPlist.strings */; };
+		13CEFA6B2102083E0083EE65 /* SoundMacExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13CEFA5B2102083E0083EE65 /* SoundMacExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7BF85BAC2101C77E0086E01A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BAB2101C77E0086E01A /* AppDelegate.m */; };
 		7BF85BAF2101C77E0086E01A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BAE2101C77E0086E01A /* ViewController.m */; };
 		7BF85BB22101C77E0086E01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BB02101C77E0086E01A /* Main.storyboard */; };
@@ -65,6 +94,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		13CEFA692102083E0083EE65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF85B9F2101C77E0086E01A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CEFA5A2102083E0083EE65;
+			remoteInfo = SoundMacExtension;
+		};
 		7BF85BD02101C7F90086E01A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BF85B9F2101C77E0086E01A /* Project object */;
@@ -75,6 +111,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		13CEFA6F2102083E0083EE65 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13CEFA6B2102083E0083EE65 /* SoundMacExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BF85BD62101C7F90086E01A /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +136,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		136F92A1210215BA008AC041 /* Alex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Alex.png; path = ../../../../Downloads/Alex.png; sourceTree = "<group>"; };
 		13A404F72101E83200C9724A /* SoundBoxMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoxMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A404F92101E83200C9724A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13A404FA2101E83200C9724A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +147,16 @@
 		13A405042101E83300C9724A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A405052101E83300C9724A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13A405072101E83300C9724A /* SoundBoxMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundBoxMac.entitlements; sourceTree = "<group>"; };
+		13CEFA4F210202A80083EE65 /* SoundCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCollectionViewItem.h; sourceTree = "<group>"; };
+		13CEFA50210202A80083EE65 /* SoundCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundCollectionViewItem.xib; sourceTree = "<group>"; };
+		13CEFA52210202A80083EE65 /* SoundCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCollectionViewItem.m; sourceTree = "<group>"; };
+		13CEFA5B2102083E0083EE65 /* SoundMacExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoundMacExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CEFA5E2102083E0083EE65 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		13CEFA5F2102083E0083EE65 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		13CEFA622102083E0083EE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		13CEFA642102083E0083EE65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CEFA662102083E0083EE65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13CEFA682102083E0083EE65 /* SoundMacExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundMacExtension.entitlements; sourceTree = "<group>"; };
 		7BF85BA72101C77E0086E01A /* SoundBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF85BAA2101C77E0086E01A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BF85BAB2101C77E0086E01A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -150,6 +208,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13CEFA582102083E0083EE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CEFA5C2102083E0083EE65 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BF85BA42101C77E0086E01A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +239,7 @@
 			children = (
 				13A404F92101E83200C9724A /* AppDelegate.h */,
 				13A404FA2101E83200C9724A /* AppDelegate.m */,
+				13CEFA4D210202A80083EE65 /* Collection */,
 				13A404FC2101E83200C9724A /* ViewController.h */,
 				13A404FD2101E83200C9724A /* ViewController.m */,
 				13A404FF2101E83300C9724A /* Assets.xcassets */,
@@ -184,12 +251,36 @@
 			path = SoundBoxMac;
 			sourceTree = "<group>";
 		};
+		13CEFA4D210202A80083EE65 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				13CEFA4F210202A80083EE65 /* SoundCollectionViewItem.h */,
+				13CEFA52210202A80083EE65 /* SoundCollectionViewItem.m */,
+				13CEFA50210202A80083EE65 /* SoundCollectionViewItem.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		13CEFA5D2102083E0083EE65 /* SoundMacExtension */ = {
+			isa = PBXGroup;
+			children = (
+				13CEFA5E2102083E0083EE65 /* TodayViewController.h */,
+				13CEFA5F2102083E0083EE65 /* TodayViewController.m */,
+				13CEFA612102083E0083EE65 /* TodayViewController.xib */,
+				13CEFA642102083E0083EE65 /* Info.plist */,
+				13CEFA652102083E0083EE65 /* InfoPlist.strings */,
+				13CEFA682102083E0083EE65 /* SoundMacExtension.entitlements */,
+			);
+			path = SoundMacExtension;
+			sourceTree = "<group>";
+		};
 		7BF85B9E2101C77E0086E01A = {
 			isa = PBXGroup;
 			children = (
 				7BF85BA92101C77E0086E01A /* SoundBox */,
 				7BF85BC82101C7F90086E01A /* Widget */,
 				13A404F82101E83200C9724A /* SoundBoxMac */,
+				13CEFA5D2102083E0083EE65 /* SoundMacExtension */,
 				7BF85BC52101C7F90086E01A /* Frameworks */,
 				7BF85BA82101C77E0086E01A /* Products */,
 			);
@@ -201,6 +292,7 @@
 				7BF85BA72101C77E0086E01A /* SoundBox.app */,
 				7BF85BC42101C7F90086E01A /* Widget.appex */,
 				13A404F72101E83200C9724A /* SoundBoxMac.app */,
+				13CEFA5B2102083E0083EE65 /* SoundMacExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +369,7 @@
 				7BF85BF02101E14C0086E01A /* nice.wav */,
 				7BF85BF12101E14C0086E01A /* issou.wav */,
 				7BF85BF22101E14C0086E01A /* play.png */,
+				136F92A1210215BA008AC041 /* Alex.png */,
 			);
 			path = Ressources;
 			sourceTree = SOURCE_ROOT;
@@ -291,15 +384,34 @@
 				13A404F32101E83200C9724A /* Sources */,
 				13A404F42101E83200C9724A /* Frameworks */,
 				13A404F52101E83200C9724A /* Resources */,
+				13CEFA6F2102083E0083EE65 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13CEFA6A2102083E0083EE65 /* PBXTargetDependency */,
 			);
 			name = SoundBoxMac;
 			productName = SoundBoxMac;
 			productReference = 13A404F72101E83200C9724A /* SoundBoxMac.app */;
 			productType = "com.apple.product-type.application";
+		};
+		13CEFA5A2102083E0083EE65 /* SoundMacExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CEFA6C2102083E0083EE65 /* Build configuration list for PBXNativeTarget "SoundMacExtension" */;
+			buildPhases = (
+				13CEFA572102083E0083EE65 /* Sources */,
+				13CEFA582102083E0083EE65 /* Frameworks */,
+				13CEFA592102083E0083EE65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundMacExtension;
+			productName = SoundMacExtension;
+			productReference = 13CEFA5B2102083E0083EE65 /* SoundMacExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		7BF85BA62101C77E0086E01A /* SoundBox */ = {
 			isa = PBXNativeTarget;
@@ -349,6 +461,9 @@
 					13A404F62101E83200C9724A = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					13CEFA5A2102083E0083EE65 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					7BF85BA62101C77E0086E01A = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
@@ -383,6 +498,7 @@
 				7BF85BA62101C77E0086E01A /* SoundBox */,
 				7BF85BC32101C7F90086E01A /* Widget */,
 				13A404F62101E83200C9724A /* SoundBoxMac */,
+				13CEFA5A2102083E0083EE65 /* SoundMacExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -392,8 +508,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CEFA3C210202930083EE65 /* baptiste.wav in Resources */,
+				13CEFA4C210202930083EE65 /* play.png in Resources */,
+				13CEFA48210202930083EE65 /* stop.png in Resources */,
+				13CEFA3D210202930083EE65 /* lecode.wav in Resources */,
+				13CEFA3B210202930083EE65 /* IZI.wav in Resources */,
+				136F92A3210215BA008AC041 /* Alex.png in Resources */,
+				13CEFA41210202930083EE65 /* joe.wav in Resources */,
+				13CEFA49210202930083EE65 /* dejapostee.wav in Resources */,
 				13A405002101E83300C9724A /* Assets.xcassets in Resources */,
+				13CEFA3F210202930083EE65 /* cestpasfaux.wav in Resources */,
+				13CEFA46210202930083EE65 /* turkey.wav in Resources */,
+				13CEFA47210202930083EE65 /* autopromo.wav in Resources */,
 				13A405032101E83300C9724A /* Main.storyboard in Resources */,
+				13CEFA44210202930083EE65 /* encoredutravail.wav in Resources */,
+				13CEFA42210202930083EE65 /* mlleman.wav in Resources */,
+				13CEFA4B210202930083EE65 /* issou.wav in Resources */,
+				13CEFA45210202930083EE65 /* ouimessire.wav in Resources */,
+				13CEFA40210202930083EE65 /* pasdefatigue.wav in Resources */,
+				13CEFA4A210202930083EE65 /* nice.wav in Resources */,
+				13CEFA43210202930083EE65 /* deloquetoi.wav in Resources */,
+				13CEFA54210202A80083EE65 /* SoundCollectionViewItem.xib in Resources */,
+				13CEFA3E210202930083EE65 /* onenagros.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CEFA592102083E0083EE65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136F92A4210215BA008AC041 /* Alex.png in Resources */,
+				13CEFA632102083E0083EE65 /* TodayViewController.xib in Resources */,
+				13CEFA672102083E0083EE65 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136F92A2210215BA008AC041 /* Alex.png in Resources */,
 				7BF85BFE2101E14C0086E01A /* play.png in Resources */,
 				7BF85BDD2101CC680086E01A /* SoundCollectionViewCell.xib in Resources */,
 				7BF85C162101F52C0086E01A /* cestpasfaux.wav in Resources */,
@@ -460,8 +607,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				13A404FE2101E83200C9724A /* ViewController.m in Sources */,
+				13CEFA55210202A80083EE65 /* SoundCollectionViewItem.m in Sources */,
+				13CEFA562102070A0083EE65 /* SoundItem.m in Sources */,
 				13A405062101E83300C9724A /* main.m in Sources */,
 				13A404FB2101E83200C9724A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CEFA572102083E0083EE65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CEFA602102083E0083EE65 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +646,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		13CEFA6A2102083E0083EE65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CEFA5A2102083E0083EE65 /* SoundMacExtension */;
+			targetProxy = 13CEFA692102083E0083EE65 /* PBXContainerItemProxy */;
+		};
 		7BF85BD12101C7F90086E01A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BF85BC32101C7F90086E01A /* Widget */;
@@ -503,6 +665,22 @@
 				13A405022101E83300C9724A /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13CEFA612102083E0083EE65 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13CEFA622102083E0083EE65 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		13CEFA652102083E0083EE65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13CEFA662102083E0083EE65 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		7BF85BB02101C77E0086E01A /* Main.storyboard */ = {
@@ -569,6 +747,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		13CEFA6D2102083E0083EE65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SoundMacExtension/SoundMacExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SoundMacExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac.SoundMacExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		13CEFA6E2102083E0083EE65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SoundMacExtension/SoundMacExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SoundMacExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac.SoundMacExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -764,6 +984,15 @@
 			buildConfigurations = (
 				13A405082101E83300C9724A /* Debug */,
 				13A405092101E83300C9724A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CEFA6C2102083E0083EE65 /* Build configuration list for PBXNativeTarget "SoundMacExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CEFA6D2102083E0083EE65 /* Debug */,
+				13CEFA6E2102083E0083EE65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
