@@ -8,9 +8,10 @@
 
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 
-@interface TodayViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface TodayViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, AVAudioPlayerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

@@ -17,6 +17,12 @@
 		7BF85BCB2101C7F90086E01A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BCA2101C7F90086E01A /* TodayViewController.m */; };
 		7BF85BCE2101C7F90086E01A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BCC2101C7F90086E01A /* MainInterface.storyboard */; };
 		7BF85BD22101C7F90086E01A /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7BF85BC42101C7F90086E01A /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7BF85BDC2101CC680086E01A /* SoundCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BDA2101CC680086E01A /* SoundCollectionViewCell.m */; };
+		7BF85BDD2101CC680086E01A /* SoundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BDB2101CC680086E01A /* SoundCollectionViewCell.xib */; };
+		7BF85BE12101D5930086E01A /* autopromo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BDF2101D5930086E01A /* autopromo.wav */; };
+		7BF85BE22101D5930086E01A /* dejapostee.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BE02101D5930086E01A /* dejapostee.wav */; };
+		7BF85BE62101D8350086E01A /* SoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BE52101D8350086E01A /* SoundItem.m */; };
+		7BF85BE72101D83A0086E01A /* SoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BE52101D8350086E01A /* SoundItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,13 @@
 		7BF85BCF2101C7F90086E01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BF85BD72101CB7E0086E01A /* SoundBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundBox.entitlements; sourceTree = "<group>"; };
 		7BF85BD82101CBE70086E01A /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		7BF85BD92101CC680086E01A /* SoundCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundCollectionViewCell.h; sourceTree = "<group>"; };
+		7BF85BDA2101CC680086E01A /* SoundCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCollectionViewCell.m; sourceTree = "<group>"; };
+		7BF85BDB2101CC680086E01A /* SoundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundCollectionViewCell.xib; sourceTree = "<group>"; };
+		7BF85BDF2101D5930086E01A /* autopromo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = autopromo.wav; path = ../../../../../../Desktop/autopromo.wav; sourceTree = "<group>"; };
+		7BF85BE02101D5930086E01A /* dejapostee.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dejapostee.wav; path = ../../../../../../Desktop/dejapostee.wav; sourceTree = "<group>"; };
+		7BF85BE42101D8350086E01A /* SoundItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundItem.h; sourceTree = "<group>"; };
+		7BF85BE52101D8350086E01A /* SoundItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +118,7 @@
 		7BF85BA92101C77E0086E01A /* SoundBox */ = {
 			isa = PBXGroup;
 			children = (
+				7BF85BE32101D8230086E01A /* Shared */,
 				7BF85BD72101CB7E0086E01A /* SoundBox.entitlements */,
 				7BF85BAA2101C77E0086E01A /* AppDelegate.h */,
 				7BF85BAB2101C77E0086E01A /* AppDelegate.m */,
@@ -130,13 +144,35 @@
 		7BF85BC82101C7F90086E01A /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				7BF85BDE2101D58A0086E01A /* Ressources */,
 				7BF85BD82101CBE70086E01A /* Widget.entitlements */,
 				7BF85BC92101C7F90086E01A /* TodayViewController.h */,
 				7BF85BCA2101C7F90086E01A /* TodayViewController.m */,
 				7BF85BCC2101C7F90086E01A /* MainInterface.storyboard */,
 				7BF85BCF2101C7F90086E01A /* Info.plist */,
+				7BF85BD92101CC680086E01A /* SoundCollectionViewCell.h */,
+				7BF85BDA2101CC680086E01A /* SoundCollectionViewCell.m */,
+				7BF85BDB2101CC680086E01A /* SoundCollectionViewCell.xib */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		7BF85BDE2101D58A0086E01A /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				7BF85BDF2101D5930086E01A /* autopromo.wav */,
+				7BF85BE02101D5930086E01A /* dejapostee.wav */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		7BF85BE32101D8230086E01A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7BF85BE42101D8350086E01A /* SoundItem.h */,
+				7BF85BE52101D8350086E01A /* SoundItem.m */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF85BDD2101CC680086E01A /* SoundCollectionViewCell.xib in Resources */,
+				7BF85BE12101D5930086E01A /* autopromo.wav in Resources */,
+				7BF85BE22101D5930086E01A /* dejapostee.wav in Resources */,
 				7BF85BCE2101C7F90086E01A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +291,7 @@
 			files = (
 				7BF85BAF2101C77E0086E01A /* ViewController.m in Sources */,
 				7BF85BBA2101C77F0086E01A /* main.m in Sources */,
+				7BF85BE62101D8350086E01A /* SoundItem.m in Sources */,
 				7BF85BAC2101C77E0086E01A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF85BDC2101CC680086E01A /* SoundCollectionViewCell.m in Sources */,
+				7BF85BE72101D83A0086E01A /* SoundItem.m in Sources */,
 				7BF85BCB2101C7F90086E01A /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
