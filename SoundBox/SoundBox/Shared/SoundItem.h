@@ -23,4 +23,7 @@
 + (SoundItem *)soundItemWithTitle:(NSString *)title filePath:(NSString *)filePath;
 
 
++ (NSMutableArray *)appSoundItems;
+
+
 @end
