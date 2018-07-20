@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A404FB2101E83200C9724A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A404FA2101E83200C9724A /* AppDelegate.m */; };
+		13A404FE2101E83200C9724A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A404FD2101E83200C9724A /* ViewController.m */; };
+		13A405002101E83300C9724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A404FF2101E83300C9724A /* Assets.xcassets */; };
+		13A405032101E83300C9724A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A405012101E83300C9724A /* Main.storyboard */; };
+		13A405062101E83300C9724A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A405052101E83300C9724A /* main.m */; };
 		7BF85BAC2101C77E0086E01A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BAB2101C77E0086E01A /* AppDelegate.m */; };
 		7BF85BAF2101C77E0086E01A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BAE2101C77E0086E01A /* ViewController.m */; };
 		7BF85BB22101C77E0086E01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85BB02101C77E0086E01A /* Main.storyboard */; };
@@ -84,6 +89,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13A404F72101E83200C9724A /* SoundBoxMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoxMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A404F92101E83200C9724A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13A404FA2101E83200C9724A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13A404FC2101E83200C9724A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13A404FD2101E83200C9724A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13A404FF2101E83300C9724A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13A405022101E83300C9724A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13A405042101E83300C9724A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A405052101E83300C9724A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13A405072101E83300C9724A /* SoundBoxMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundBoxMac.entitlements; sourceTree = "<group>"; };
 		7BF85BA72101C77E0086E01A /* SoundBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF85BAA2101C77E0086E01A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BF85BAB2101C77E0086E01A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +143,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		13A404F42101E83200C9724A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BF85BA42101C77E0086E01A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,11 +168,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13A404F82101E83200C9724A /* SoundBoxMac */ = {
+			isa = PBXGroup;
+			children = (
+				13A404F92101E83200C9724A /* AppDelegate.h */,
+				13A404FA2101E83200C9724A /* AppDelegate.m */,
+				13A404FC2101E83200C9724A /* ViewController.h */,
+				13A404FD2101E83200C9724A /* ViewController.m */,
+				13A404FF2101E83300C9724A /* Assets.xcassets */,
+				13A405012101E83300C9724A /* Main.storyboard */,
+				13A405042101E83300C9724A /* Info.plist */,
+				13A405052101E83300C9724A /* main.m */,
+				13A405072101E83300C9724A /* SoundBoxMac.entitlements */,
+			);
+			path = SoundBoxMac;
+			sourceTree = "<group>";
+		};
 		7BF85B9E2101C77E0086E01A = {
 			isa = PBXGroup;
 			children = (
 				7BF85BA92101C77E0086E01A /* SoundBox */,
 				7BF85BC82101C7F90086E01A /* Widget */,
+				13A404F82101E83200C9724A /* SoundBoxMac */,
 				7BF85BC52101C7F90086E01A /* Frameworks */,
 				7BF85BA82101C77E0086E01A /* Products */,
 			);
@@ -161,6 +200,7 @@
 			children = (
 				7BF85BA72101C77E0086E01A /* SoundBox.app */,
 				7BF85BC42101C7F90086E01A /* Widget.appex */,
+				13A404F72101E83200C9724A /* SoundBoxMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +284,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		13A404F62101E83200C9724A /* SoundBoxMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A4050A2101E83300C9724A /* Build configuration list for PBXNativeTarget "SoundBoxMac" */;
+			buildPhases = (
+				13A404F32101E83200C9724A /* Sources */,
+				13A404F42101E83200C9724A /* Frameworks */,
+				13A404F52101E83200C9724A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundBoxMac;
+			productName = SoundBoxMac;
+			productReference = 13A404F72101E83200C9724A /* SoundBoxMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7BF85BA62101C77E0086E01A /* SoundBox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BF85BBD2101C77F0086E01A /* Build configuration list for PBXNativeTarget "SoundBox" */;
@@ -289,6 +346,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = pepper;
 				TargetAttributes = {
+					13A404F62101E83200C9724A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					7BF85BA62101C77E0086E01A = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
@@ -322,11 +382,21 @@
 			targets = (
 				7BF85BA62101C77E0086E01A /* SoundBox */,
 				7BF85BC32101C7F90086E01A /* Widget */,
+				13A404F62101E83200C9724A /* SoundBoxMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		13A404F52101E83200C9724A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A405002101E83300C9724A /* Assets.xcassets in Resources */,
+				13A405032101E83300C9724A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BF85BA52101C77E0086E01A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +455,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		13A404F32101E83200C9724A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A404FE2101E83200C9724A /* ViewController.m in Sources */,
+				13A405062101E83300C9724A /* main.m in Sources */,
+				13A404FB2101E83200C9724A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BF85BA32101C77E0086E01A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +497,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		13A405012101E83300C9724A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A405022101E83300C9724A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		7BF85BB02101C77E0086E01A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,6 +532,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		13A405082101E83300C9724A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundBoxMac/SoundBoxMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SoundBoxMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		13A405092101E83300C9724A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundBoxMac/SoundBoxMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SoundBoxMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		7BF85BBB2101C77F0086E01A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,6 +759,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		13A4050A2101E83300C9724A /* Build configuration list for PBXNativeTarget "SoundBoxMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A405082101E83300C9724A /* Debug */,
+				13A405092101E83300C9724A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7BF85BA22101C77E0086E01A /* Build configuration list for PBXProject "SoundBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
