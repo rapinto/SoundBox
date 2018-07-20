@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV3-ex-P00">
-                        <rect key="frame" x="5" y="74" width="80" height="16"/>
+                        <rect key="frame" x="5" y="69" width="80" height="16"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,17 +34,17 @@
                     </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="0.16990643599999999" blue="0.1111088717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
             <constraints>
                 <constraint firstItem="cqd-bE-zlb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="3qw-ZK-QDH"/>
                 <constraint firstAttribute="trailing" secondItem="IV3-ex-P00" secondAttribute="trailing" constant="5" id="3zQ-TG-Kr7"/>
                 <constraint firstItem="cqd-bE-zlb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5yd-DQ-Ai5"/>
                 <constraint firstItem="IV3-ex-P00" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="kvI-G7-mWF"/>
-                <constraint firstAttribute="bottom" secondItem="IV3-ex-P00" secondAttribute="bottom" id="wFN-cc-QA0"/>
+                <constraint firstAttribute="bottom" secondItem="IV3-ex-P00" secondAttribute="bottom" constant="5" id="wFN-cc-QA0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <connections>
-                <outlet property="playIcon" destination="cqd-bE-zlb" id="IUh-Hy-Y7N"/>
+                <outlet property="playIcon" destination="cqd-bE-zlb" id="vvK-Y7-h2v"/>
                 <outlet property="soundTitleLabel" destination="IV3-ex-P00" id="tUe-uT-ozb"/>
             </connections>
         </collectionViewCell>

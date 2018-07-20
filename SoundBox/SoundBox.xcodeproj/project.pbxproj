@@ -48,6 +48,20 @@
 		7BF85C0A2101E5900086E01A /* deloquetoi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C082101E5900086E01A /* deloquetoi.wav */; };
 		7BF85C0C2101E6C60086E01A /* mlleman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C0B2101E6C60086E01A /* mlleman.wav */; };
 		7BF85C0D2101E6C60086E01A /* mlleman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C0B2101E6C60086E01A /* mlleman.wav */; };
+		7BF85C0F2101E97A0086E01A /* joe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C0E2101E97A0086E01A /* joe.wav */; };
+		7BF85C102101E97A0086E01A /* joe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C0E2101E97A0086E01A /* joe.wav */; };
+		7BF85C122101EA280086E01A /* pasdefatigue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C112101EA280086E01A /* pasdefatigue.wav */; };
+		7BF85C132101EA280086E01A /* pasdefatigue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C112101EA280086E01A /* pasdefatigue.wav */; };
+		7BF85C152101F52C0086E01A /* cestpasfaux.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C142101F52C0086E01A /* cestpasfaux.wav */; };
+		7BF85C162101F52C0086E01A /* cestpasfaux.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C142101F52C0086E01A /* cestpasfaux.wav */; };
+		7BF85C1B2101F8BB0086E01A /* onenagros.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C1A2101F8BB0086E01A /* onenagros.wav */; };
+		7BF85C1C2101F8BB0086E01A /* onenagros.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C1A2101F8BB0086E01A /* onenagros.wav */; };
+		7BF85C1E2101F9C40086E01A /* lecode.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C1D2101F9C40086E01A /* lecode.wav */; };
+		7BF85C1F2101F9C40086E01A /* lecode.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C1D2101F9C40086E01A /* lecode.wav */; };
+		7BF85C212101FA020086E01A /* baptiste.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C202101FA020086E01A /* baptiste.wav */; };
+		7BF85C222101FA020086E01A /* baptiste.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C202101FA020086E01A /* baptiste.wav */; };
+		7BF85C242101FB660086E01A /* IZI.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C232101FB660086E01A /* IZI.wav */; };
+		7BF85C252101FB660086E01A /* IZI.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BF85C232101FB660086E01A /* IZI.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +133,13 @@
 		7BF85C012101E2E30086E01A /* ouimessire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ouimessire.wav; sourceTree = "<group>"; };
 		7BF85C082101E5900086E01A /* deloquetoi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = deloquetoi.wav; sourceTree = "<group>"; };
 		7BF85C0B2101E6C60086E01A /* mlleman.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mlleman.wav; sourceTree = "<group>"; };
+		7BF85C0E2101E97A0086E01A /* joe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = joe.wav; sourceTree = "<group>"; };
+		7BF85C112101EA280086E01A /* pasdefatigue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pasdefatigue.wav; sourceTree = "<group>"; };
+		7BF85C142101F52C0086E01A /* cestpasfaux.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cestpasfaux.wav; sourceTree = "<group>"; };
+		7BF85C1A2101F8BB0086E01A /* onenagros.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = onenagros.wav; sourceTree = "<group>"; };
+		7BF85C1D2101F9C40086E01A /* lecode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lecode.wav; sourceTree = "<group>"; };
+		7BF85C202101FA020086E01A /* baptiste.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = baptiste.wav; sourceTree = "<group>"; };
+		7BF85C232101FB660086E01A /* IZI.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = IZI.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +259,13 @@
 		7BF85BEC2101E14B0086E01A /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				7BF85C232101FB660086E01A /* IZI.wav */,
+				7BF85C202101FA020086E01A /* baptiste.wav */,
+				7BF85C1D2101F9C40086E01A /* lecode.wav */,
+				7BF85C1A2101F8BB0086E01A /* onenagros.wav */,
+				7BF85C142101F52C0086E01A /* cestpasfaux.wav */,
+				7BF85C112101EA280086E01A /* pasdefatigue.wav */,
+				7BF85C0E2101E97A0086E01A /* joe.wav */,
 				7BF85C0B2101E6C60086E01A /* mlleman.wav */,
 				7BF85C082101E5900086E01A /* deloquetoi.wav */,
 				7BF85C002101E2E30086E01A /* encoredutravail.wav */,
@@ -378,14 +406,21 @@
 				7BF85BFD2101E14C0086E01A /* play.png in Resources */,
 				7BF85C092101E5900086E01A /* deloquetoi.wav in Resources */,
 				7BF85C062101E2E30086E01A /* ouimessire.wav in Resources */,
+				7BF85C1E2101F9C40086E01A /* lecode.wav in Resources */,
+				7BF85C152101F52C0086E01A /* cestpasfaux.wav in Resources */,
 				7BF85BF52101E14C0086E01A /* stop.png in Resources */,
+				7BF85C212101FA020086E01A /* baptiste.wav in Resources */,
+				7BF85C242101FB660086E01A /* IZI.wav in Resources */,
 				7BF85BF72101E14C0086E01A /* dejapostee.wav in Resources */,
 				7BF85BB42101C77F0086E01A /* Assets.xcassets in Resources */,
 				7BF85C022101E2E30086E01A /* turkey.wav in Resources */,
 				7BF85BB22101C77E0086E01A /* Main.storyboard in Resources */,
 				7BF85BF32101E14C0086E01A /* autopromo.wav in Resources */,
 				7BF85BF92101E14C0086E01A /* nice.wav in Resources */,
+				7BF85C1B2101F8BB0086E01A /* onenagros.wav in Resources */,
+				7BF85C0F2101E97A0086E01A /* joe.wav in Resources */,
 				7BF85C042101E2E30086E01A /* encoredutravail.wav in Resources */,
+				7BF85C122101EA280086E01A /* pasdefatigue.wav in Resources */,
 				7BF85C0C2101E6C60086E01A /* mlleman.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,17 +431,24 @@
 			files = (
 				7BF85BFE2101E14C0086E01A /* play.png in Resources */,
 				7BF85BDD2101CC680086E01A /* SoundCollectionViewCell.xib in Resources */,
+				7BF85C162101F52C0086E01A /* cestpasfaux.wav in Resources */,
 				7BF85BF42101E14C0086E01A /* autopromo.wav in Resources */,
+				7BF85C102101E97A0086E01A /* joe.wav in Resources */,
+				7BF85C1C2101F8BB0086E01A /* onenagros.wav in Resources */,
 				7BF85C052101E2E30086E01A /* encoredutravail.wav in Resources */,
 				7BF85C032101E2E30086E01A /* turkey.wav in Resources */,
 				7BF85C0D2101E6C60086E01A /* mlleman.wav in Resources */,
 				7BF85C0A2101E5900086E01A /* deloquetoi.wav in Resources */,
 				7BF85BFA2101E14C0086E01A /* nice.wav in Resources */,
+				7BF85C132101EA280086E01A /* pasdefatigue.wav in Resources */,
 				7BF85C072101E2E30086E01A /* ouimessire.wav in Resources */,
 				7BF85BF82101E14C0086E01A /* dejapostee.wav in Resources */,
+				7BF85C222101FA020086E01A /* baptiste.wav in Resources */,
 				7BF85BCE2101C7F90086E01A /* MainInterface.storyboard in Resources */,
+				7BF85C1F2101F9C40086E01A /* lecode.wav in Resources */,
 				7BF85BF62101E14C0086E01A /* stop.png in Resources */,
 				7BF85BFC2101E14C0086E01A /* issou.wav in Resources */,
+				7BF85C252101FB660086E01A /* IZI.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

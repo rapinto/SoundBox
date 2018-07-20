@@ -13,7 +13,7 @@
 
 
 static const CGSize maxCompactSize = {320, 86};
-static const CGSize maxExpandedSize = {320, 384};
+static const CGSize maxExpandedSize = {320, 359};
 
 
 @interface TodayViewController () <NCWidgetProviding>
@@ -136,9 +136,37 @@ static const CGSize maxExpandedSize = {320, 384};
     item = [SoundItem soundItemWithTitle:@"Deloque toi" filePath:filePath];
     [self.soundItems addObject:item];
     
-    filePath = [[NSBundle mainBundle] pathForResource:@"mlleman.wav" ofType:@"wav"];
+    filePath = [[NSBundle mainBundle] pathForResource:@"mlleman" ofType:@"wav"];
     item = [SoundItem soundItemWithTitle:@"Cindy" filePath:filePath];
-    [self.soundItems addObject:item];    
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"joe" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"J'en veux" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"pasdefatigue" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Fatigue" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"cestpasfaux" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"C pas faux" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"baptiste" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Baptiste" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"onenagros" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"N'en a Gros" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"lecode" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Le code" filePath:filePath];
+    [self.soundItems addObject:item];
+    
+    filePath = [[NSBundle mainBundle] pathForResource:@"IZI" ofType:@"wav"];
+    item = [SoundItem soundItemWithTitle:@"Easy" filePath:filePath];
+    [self.soundItems addObject:item];
 }
 
 
@@ -154,6 +182,45 @@ static const CGSize maxExpandedSize = {320, 384};
 - (void)updateToWidgetExpandedMode
 {
 //    self.view.backgroundColor = [UIColor blueColor];
+}
+
+
+- (void)playSoundAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"playSoundAtIndexPath");
+    SoundItem * item = [self.soundItems objectAtIndex:indexPath.row];
+    self.currentItem = item;
+    
+    [self.collectionView reloadData];
+    
+    NSURL *soundFileURL = [NSURL fileURLWithPath:item.filePath];
+    
+    NSError *error;
+    
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
+                                                         error:&error];
+    self.player.numberOfLoops = 0; //Infinite
+    self.player.delegate  = self;
+    [self.player play];
+}
+
+
+- (void)stopCurrentPlayingSound
+{
+    NSLog(@"stopCurrentPlayingSound");
+    [self.player stop];
+    
+    [self deletePlayer];
+}
+
+
+- (void)deletePlayer
+{
+    NSLog(@"deletePlayer");
+    self.player = nil;
+    self.currentItem = nil;
+    
+    [self.collectionView reloadData];
 }
 
 
@@ -212,22 +279,23 @@ static const CGSize maxExpandedSize = {320, 384};
     float width, height;
     if (self.extensionContext.widgetActiveDisplayMode == NCWidgetDisplayModeCompact)
     {
-        height = maxCompactSize.height;
-        width = (collectionView.frame.size.width - 15) / 4;
+        height = (collectionView.frame.size.width - 39) / 4;
+        width = (collectionView.frame.size.width - 39) / 4;
     }
     else
     {
         height = (maxExpandedSize.height - 39) / 4;
-        width = (collectionView.frame.size.width - 15) / 4;
+        width = (collectionView.frame.size.width - 39) / 4;
     }
     
+//    NSLog(@"sizeForItemAtIndexPath %@", [NSValue valueWithCGSize:CGSizeMake(width, height)]);
     return CGSizeMake(width, height);
 }
 
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(12, 0, 12, 0);
+    return UIEdgeInsetsMake(12, 12, 12, 12);
 }
 
 
@@ -252,20 +320,15 @@ static const CGSize maxExpandedSize = {320, 384};
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    SoundItem * item = [self.soundItems objectAtIndex:indexPath.row];
-    self.currentItem = item;
+    if (self.player != nil)
+    {
+        [self stopCurrentPlayingSound];
+    }
+    else
+    {
+        [self playSoundAtIndexPath:indexPath];
+    }
     
-    [self.collectionView reloadData];
-    
-    NSURL *soundFileURL = [NSURL fileURLWithPath:item.filePath];
-    
-    NSError *error;
-    
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
-                                                         error:&error];
-    self.player.numberOfLoops = 0; //Infinite
-    self.player.delegate  = self;
-    [self.player play];
 }
 
 
@@ -274,10 +337,7 @@ static const CGSize maxExpandedSize = {320, 384};
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-    self.player = nil;
-    self.currentItem = nil;
- 
-    [self.collectionView reloadData];
+    [self deletePlayer];
 }
 
 
