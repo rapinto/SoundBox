@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B26A8F82105B036007B765F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A8F72105B036007B765F /* AppDelegate.m */; };
+		7B26A8FD2105B038007B765F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B26A8FC2105B038007B765F /* Assets.xcassets */; };
+		7B26A9002105B038007B765F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B26A8FE2105B038007B765F /* Main.storyboard */; };
+		7B26A9032105B038007B765F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A9022105B038007B765F /* main.m */; };
+		7B26A90A2105B057007B765F /* MacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A9082105B056007B765F /* MacViewController.m */; };
+		7B26A9102105B077007B765F /* SoundCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B26A90E2105B076007B765F /* SoundCollectionViewItem.xib */; };
+		7B26A9112105B077007B765F /* SoundCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A90F2105B076007B765F /* SoundCollectionViewItem.m */; };
+		7B26A9122105B099007B765F /* SoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BE52101D8350086E01A /* SoundItem.m */; };
+		7B26A9182105B18D007B765F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF85BC62101C7F90086E01A /* NotificationCenter.framework */; };
+		7B26A91C2105B18D007B765F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A91B2105B18D007B765F /* TodayViewController.m */; };
+		7B26A91F2105B18D007B765F /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B26A91D2105B18D007B765F /* TodayViewController.xib */; };
+		7B26A9232105B18D007B765F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B26A9212105B18D007B765F /* InfoPlist.strings */; };
+		7B26A9272105B18D007B765F /* SoundMacExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B26A9172105B18D007B765F /* SoundMacExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B26A92C2105B1D3007B765F /* SoundCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B26A90E2105B076007B765F /* SoundCollectionViewItem.xib */; };
+		7B26A92D2105B1D3007B765F /* SoundCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26A90F2105B076007B765F /* SoundCollectionViewItem.m */; };
+		7B26A92E2105B1D5007B765F /* SoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF85BE52101D8350086E01A /* SoundItem.m */; };
 		7B8F58382102211B00B3A99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B8F58372102211B00B3A99D /* Assets.xcassets */; };
 		7B8F583F2102211B00B3A99D /* SoundW2 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B8F583E2102211B00B3A99D /* SoundW2 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7B8F58442102211B00B3A99D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F58432102211B00B3A99D /* InterfaceController.swift */; };
@@ -103,6 +119,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B26A9252105B18D007B765F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF85B9F2101C77E0086E01A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B26A9162105B18D007B765F;
+			remoteInfo = SoundMacExtension;
+		};
 		7B8F58402102211B00B3A99D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BF85B9F2101C77E0086E01A /* Project object */;
@@ -127,6 +150,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7B26A92B2105B18D007B765F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B26A9272105B18D007B765F /* SoundMacExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8F58502102211C00B3A99D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +197,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B26A8F42105B036007B765F /* SoundBoxMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundBoxMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B26A8F62105B036007B765F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B26A8F72105B036007B765F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B26A8FC2105B038007B765F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B26A8FF2105B038007B765F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B26A9012105B038007B765F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B26A9022105B038007B765F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B26A9042105B038007B765F /* SoundBoxMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundBoxMac.entitlements; sourceTree = "<group>"; };
+		7B26A9082105B056007B765F /* MacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacViewController.m; sourceTree = "<group>"; };
+		7B26A9092105B057007B765F /* MacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacViewController.h; sourceTree = "<group>"; };
+		7B26A90B2105B065007B765F /* PlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerProtocol.h; sourceTree = "<group>"; };
+		7B26A90D2105B076007B765F /* SoundCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCollectionViewItem.h; sourceTree = "<group>"; };
+		7B26A90E2105B076007B765F /* SoundCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundCollectionViewItem.xib; sourceTree = "<group>"; };
+		7B26A90F2105B076007B765F /* SoundCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCollectionViewItem.m; sourceTree = "<group>"; };
+		7B26A9172105B18D007B765F /* SoundMacExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoundMacExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B26A91A2105B18D007B765F /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		7B26A91B2105B18D007B765F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		7B26A91E2105B18D007B765F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		7B26A9202105B18D007B765F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B26A9222105B18D007B765F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B26A9242105B18D007B765F /* SoundMacExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundMacExtension.entitlements; sourceTree = "<group>"; };
 		7B8F58322102211A00B3A99D /* SoundW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8F58372102211B00B3A99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B8F58392102211B00B3A99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,6 +274,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B26A8F12105B036007B765F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26A9142105B18D007B765F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26A9182105B18D007B765F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8F583B2102211B00B3A99D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +314,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B26A8F52105B036007B765F /* SoundBoxMac */ = {
+			isa = PBXGroup;
+			children = (
+				7B26A90C2105B076007B765F /* Collection */,
+				7B26A90B2105B065007B765F /* PlayerProtocol.h */,
+				7B26A9092105B057007B765F /* MacViewController.h */,
+				7B26A9082105B056007B765F /* MacViewController.m */,
+				7B26A8F62105B036007B765F /* AppDelegate.h */,
+				7B26A8F72105B036007B765F /* AppDelegate.m */,
+				7B26A8FC2105B038007B765F /* Assets.xcassets */,
+				7B26A8FE2105B038007B765F /* Main.storyboard */,
+				7B26A9012105B038007B765F /* Info.plist */,
+				7B26A9022105B038007B765F /* main.m */,
+				7B26A9042105B038007B765F /* SoundBoxMac.entitlements */,
+			);
+			path = SoundBoxMac;
+			sourceTree = "<group>";
+		};
+		7B26A90C2105B076007B765F /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				7B26A90D2105B076007B765F /* SoundCollectionViewItem.h */,
+				7B26A90E2105B076007B765F /* SoundCollectionViewItem.xib */,
+				7B26A90F2105B076007B765F /* SoundCollectionViewItem.m */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		7B26A9192105B18D007B765F /* SoundMacExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7B26A91A2105B18D007B765F /* TodayViewController.h */,
+				7B26A91B2105B18D007B765F /* TodayViewController.m */,
+				7B26A91D2105B18D007B765F /* TodayViewController.xib */,
+				7B26A9202105B18D007B765F /* Info.plist */,
+				7B26A9212105B18D007B765F /* InfoPlist.strings */,
+				7B26A9242105B18D007B765F /* SoundMacExtension.entitlements */,
+			);
+			path = SoundMacExtension;
+			sourceTree = "<group>";
+		};
 		7B8F58332102211A00B3A99D /* SoundW2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +386,8 @@
 				7BF85BC82101C7F90086E01A /* Widget */,
 				7B8F58332102211A00B3A99D /* SoundW2 */,
 				7B8F58422102211B00B3A99D /* SoundW2 Extension */,
+				7B26A8F52105B036007B765F /* SoundBoxMac */,
+				7B26A9192105B18D007B765F /* SoundMacExtension */,
 				7BF85BC52101C7F90086E01A /* Frameworks */,
 				7BF85BA82101C77E0086E01A /* Products */,
 			);
@@ -287,6 +400,8 @@
 				7BF85BC42101C7F90086E01A /* Widget.appex */,
 				7B8F58322102211A00B3A99D /* SoundW2.app */,
 				7B8F583E2102211B00B3A99D /* SoundW2 Extension.appex */,
+				7B26A8F42105B036007B765F /* SoundBoxMac.app */,
+				7B26A9172105B18D007B765F /* SoundMacExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,6 +485,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B26A8F32105B036007B765F /* SoundBoxMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B26A9072105B038007B765F /* Build configuration list for PBXNativeTarget "SoundBoxMac" */;
+			buildPhases = (
+				7B26A8F02105B036007B765F /* Sources */,
+				7B26A8F12105B036007B765F /* Frameworks */,
+				7B26A8F22105B036007B765F /* Resources */,
+				7B26A92B2105B18D007B765F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B26A9262105B18D007B765F /* PBXTargetDependency */,
+			);
+			name = SoundBoxMac;
+			productName = SoundBoxMac;
+			productReference = 7B26A8F42105B036007B765F /* SoundBoxMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B26A9162105B18D007B765F /* SoundMacExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B26A9282105B18D007B765F /* Build configuration list for PBXNativeTarget "SoundMacExtension" */;
+			buildPhases = (
+				7B26A9132105B18D007B765F /* Sources */,
+				7B26A9142105B18D007B765F /* Frameworks */,
+				7B26A9152105B18D007B765F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundMacExtension;
+			productName = SoundMacExtension;
+			productReference = 7B26A9172105B18D007B765F /* SoundMacExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7B8F58312102211A00B3A99D /* SoundW2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B8F58512102211C00B3A99D /* Build configuration list for PBXNativeTarget "SoundW2" */;
@@ -452,6 +603,12 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = pepper;
 				TargetAttributes = {
+					7B26A8F32105B036007B765F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7B26A9162105B18D007B765F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					7B8F58312102211A00B3A99D = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
@@ -503,11 +660,33 @@
 				7BF85BC32101C7F90086E01A /* Widget */,
 				7B8F58312102211A00B3A99D /* SoundW2 */,
 				7B8F583D2102211B00B3A99D /* SoundW2 Extension */,
+				7B26A8F32105B036007B765F /* SoundBoxMac */,
+				7B26A9162105B18D007B765F /* SoundMacExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B26A8F22105B036007B765F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26A8FD2105B038007B765F /* Assets.xcassets in Resources */,
+				7B26A9102105B077007B765F /* SoundCollectionViewItem.xib in Resources */,
+				7B26A9002105B038007B765F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26A9152105B18D007B765F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26A91F2105B18D007B765F /* TodayViewController.xib in Resources */,
+				7B26A92C2105B1D3007B765F /* SoundCollectionViewItem.xib in Resources */,
+				7B26A9232105B18D007B765F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8F58302102211A00B3A99D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,6 +797,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B26A8F02105B036007B765F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26A9032105B038007B765F /* main.m in Sources */,
+				7B26A9112105B077007B765F /* SoundCollectionViewItem.m in Sources */,
+				7B26A90A2105B057007B765F /* MacViewController.m in Sources */,
+				7B26A9122105B099007B765F /* SoundItem.m in Sources */,
+				7B26A8F82105B036007B765F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B26A9132105B18D007B765F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B26A91C2105B18D007B765F /* TodayViewController.m in Sources */,
+				7B26A92E2105B1D5007B765F /* SoundItem.m in Sources */,
+				7B26A92D2105B1D3007B765F /* SoundCollectionViewItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B8F583A2102211B00B3A99D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,6 +853,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B26A9262105B18D007B765F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B26A9162105B18D007B765F /* SoundMacExtension */;
+			targetProxy = 7B26A9252105B18D007B765F /* PBXContainerItemProxy */;
+		};
 		7B8F58412102211B00B3A99D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7B8F583D2102211B00B3A99D /* SoundW2 Extension */;
@@ -670,6 +876,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7B26A8FE2105B038007B765F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B26A8FF2105B038007B765F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B26A91D2105B18D007B765F /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B26A91E2105B18D007B765F /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		7B26A9212105B18D007B765F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B26A9222105B18D007B765F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		7B8F585B210221CC00B3A99D /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -705,6 +935,92 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7B26A9052105B038007B765F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundBoxMac/SoundBoxMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 978Q5P78QZ;
+				INFOPLIST_FILE = SoundBoxMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B26A9062105B038007B765F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundBoxMac/SoundBoxMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 978Q5P78QZ;
+				INFOPLIST_FILE = SoundBoxMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B26A9292105B18D007B765F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SoundMacExtension/SoundMacExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 978Q5P78QZ;
+				INFOPLIST_FILE = SoundMacExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac.SoundMacExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7B26A92A2105B18D007B765F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SoundMacExtension/SoundMacExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 978Q5P78QZ;
+				INFOPLIST_FILE = SoundMacExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = pepper.SoundBoxMac.SoundMacExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		7B8F584E2102211C00B3A99D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -988,6 +1304,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B26A9072105B038007B765F /* Build configuration list for PBXNativeTarget "SoundBoxMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B26A9052105B038007B765F /* Debug */,
+				7B26A9062105B038007B765F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B26A9282105B18D007B765F /* Build configuration list for PBXNativeTarget "SoundMacExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B26A9292105B18D007B765F /* Debug */,
+				7B26A92A2105B18D007B765F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7B8F584D2102211C00B3A99D /* Build configuration list for PBXNativeTarget "SoundW2 Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -65,9 +65,6 @@ static const CGSize maxExpandedSize = {320, 359};
 
 - (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode withMaximumSize:(CGSize)maxSize
 {
-    NSLog(@"maxSize %@", [NSValue valueWithCGSize:maxSize]);
-    
-    NSLog(@"activeDisplayMode %lu with maxSize %@", activeDisplayMode, [NSValue valueWithCGSize:maxSize]);
     if (activeDisplayMode == NCWidgetDisplayModeCompact)
     {
         [self updateToWidgetCompactMode];
@@ -85,7 +82,6 @@ static const CGSize maxExpandedSize = {320, 359};
 
 - (CGSize)widgetMaximumSizeForDisplayMode:(NCWidgetDisplayMode)displayMode
 {
-    NSLog(@"activeDisplayMode %lu", displayMode);
     if (displayMode == NCWidgetDisplayModeCompact)
     {
         return maxCompactSize;
@@ -127,7 +123,7 @@ static const CGSize maxExpandedSize = {320, 359};
     
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
                                                          error:&error];
-    self.player.numberOfLoops = 0; //Infinite
+    self.player.numberOfLoops = 0;
     self.player.delegate  = self;
     [self.player play];
 }
