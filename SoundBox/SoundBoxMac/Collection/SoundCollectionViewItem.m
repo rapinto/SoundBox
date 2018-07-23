@@ -36,6 +36,9 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = NSColor.lightGrayColor.CGColor;
 }
@@ -64,18 +67,25 @@ NSString * const SoundCollectionViewItem_Identifier = @"SoundCollectionViewItem_
 
 - (IBAction)playAction:(id)sender
 {
-    NSURL * url = nil;
+    NSString * file = [[self.currentItem.filePath lastPathComponent] stringByDeletingPathExtension];
     
-    if (self.currentItem.filePath)
-    {
-        url = [NSURL fileURLWithPath:self.currentItem.filePath];
-    }
-    else
-    {
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"]];
-    }
+    [self.playerDelegate sendSoundWithFile:file];
     
-    [self playURL:url];
+//    Play local
+    
+//    NSURL * url = nil;
+//
+//    if (self.currentItem.filePath)
+//    {
+//        url = [NSURL fileURLWithPath:self.currentItem.filePath];
+//    }
+//    else
+//    {
+//        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"turkey" ofType:@"wav"]];
+//    }
+//
+//    [self playURL:url];
+
 }
 
 
