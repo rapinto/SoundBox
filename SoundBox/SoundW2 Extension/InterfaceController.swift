@@ -23,7 +23,9 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var interfaceTable: WKInterfaceTable!
     
-    var player: AVAudioPlayer?
+    
+    var _audioPlayer : AVAudioPlayerNode!
+    var _audioEngine : AVAudioEngine!
     
     
     override func awake(withContext context: Any?) {
@@ -52,26 +54,48 @@ class InterfaceController: WKInterfaceController {
         let item = soundItems?.object(at: rowIndex)
         let soundItem : SoundItem = item as! SoundItem
         
-        self.playSound2(soundName: soundItem.soundName)
+        self.playAudio(soundName: soundItem.soundName)
     }
+
     
-    
-    func playSound2(soundName: String) {
-        let soundPath = Bundle.main.path(forResource: soundName, ofType: "wav")
-        let soundPathURL = URL(fileURLWithPath: soundPath!)
-        let audioFile = WKAudioFileAsset(url: soundPathURL)
-        let audioItem = WKAudioFilePlayerItem(asset: audioFile)
-        
-        let audioPlayer = WKAudioFilePlayer.init(playerItem: audioItem)
-        
-        if audioPlayer.status == .readyToPlay
-        {
-            audioPlayer.play()
+    func playAudio(soundName: String)
+    {
+        if (_audioPlayer==nil) {
+            _audioPlayer = AVAudioPlayerNode()
+            _audioEngine = AVAudioEngine()
+            _audioEngine.attach(_audioPlayer)
+            
+            let stereoFormat = AVAudioFormat(standardFormatWithSampleRate: 44100, channels: 2)
+            _audioEngine.connect(_audioPlayer, to: _audioEngine.mainMixerNode, format: stereoFormat)
+            
+            do {
+                
+                if !_audioEngine.isRunning {
+                    try _audioEngine.start()
+                }
+                
+            } catch {}
+            
         }
-        else
-        {
-            print("Not ready!!")
+        
+        
+        if let path = Bundle.main.path(forResource: soundName, ofType: "wav") {
+            
+            let fileUrl = URL(fileURLWithPath: path)
+            
+            do {
+                let asset = try AVAudioFile(forReading: fileUrl)
+                
+                _audioPlayer.scheduleFile(asset, at: nil, completionHandler: nil)
+                _audioPlayer.play()
+                
+            } catch {
+                print ("asset error")
+            }
+            
         }
+        
+        
     }
     
 

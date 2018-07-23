@@ -17,18 +17,10 @@
             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-gm-Dym">
-                    <rect key="frame" x="25" y="25" width="50" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="VEg-Ww-aQb"/>
-                        <constraint firstAttribute="width" constant="50" id="nlz-AO-V42"/>
-                    </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Alex" id="V3l-0T-aze"/>
-                </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HcI-Dg-Vdt">
                     <rect key="frame" x="32" y="80" width="37" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="16t-cv-A21"/>
+                        <constraint firstAttribute="height" constant="20" id="k93-iL-kCX"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="dkI-cf-YMR">
                         <font key="font" metaFont="system"/>
@@ -36,12 +28,27 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="TM1-XU-yiq">
+                    <rect key="frame" x="26" y="26" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="9Ws-7N-GTQ"/>
+                        <constraint firstAttribute="height" constant="48" id="OGD-5w-Weh"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Alex" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="Y94-qE-YP1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playAction:" target="-2" id="loH-VW-Pwg"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="9v0-gm-Dym" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="1Ds-x8-Rog"/>
-                <constraint firstItem="HcI-Dg-Vdt" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Yw5-7W-Wji"/>
-                <constraint firstItem="HcI-Dg-Vdt" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="jHF-qX-iWE"/>
-                <constraint firstItem="9v0-gm-Dym" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="nmh-wJ-wXD"/>
+                <constraint firstItem="TM1-XU-yiq" firstAttribute="top" secondItem="HcI-Dg-Vdt" secondAttribute="bottom" constant="6" id="0SJ-NI-a4t"/>
+                <constraint firstItem="TM1-XU-yiq" firstAttribute="top" secondItem="HcI-Dg-Vdt" secondAttribute="bottom" constant="6" id="EMd-hh-FWV"/>
+                <constraint firstItem="HcI-Dg-Vdt" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="TqT-Mw-amV"/>
+                <constraint firstItem="HcI-Dg-Vdt" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Zkt-YU-Kj7"/>
+                <constraint firstItem="TM1-XU-yiq" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="hyc-un-uAT"/>
             </constraints>
         </customView>
     </objects>

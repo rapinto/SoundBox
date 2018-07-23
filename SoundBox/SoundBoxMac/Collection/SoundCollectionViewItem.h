@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+extern NSString * const SoundCollectionViewItem_Identifier;
+
 @interface SoundCollectionViewItem : NSCollectionViewItem
 
 @property (weak) IBOutlet NSTextField * soundTitle;

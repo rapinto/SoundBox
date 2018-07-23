@@ -23,7 +23,7 @@
 #pragma mark - Public
 
 
-+ (SoundItem *)soundItemWithTitle:(NSString *)title filePath:(NSString *)filePath;
++ (SoundItem *)soundItemWithTitle:(NSString *)title filePath:(NSString *)filePath soundName:(NSString *)soundName;
 
 
 + (NSMutableArray *)appSoundItems;
